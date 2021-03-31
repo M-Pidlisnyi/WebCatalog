@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Тут щось буде написано</p>
+    <div class="content">
+        <div class="card-columns">
+                @foreach(var person in Model.People)
+                {
+                    if (person.IsOnFrontPage)
+                    {
+                        <div class="card">
+                            <div class="card-img" style="background-image: url('@person.Image')"></div>
+                            <div class="card-body">
+                                <h5 class="card-title">@person.Role</h5>
+                                @person.Name
+                                <br /> Date of birth: @person.BirthDate.Day @person.BirthDate.Month @person.BirthDate.Year
+                            </div>
+                        </div>
+                    }
+                }
+        </div>
+    </div>
+
+</div>

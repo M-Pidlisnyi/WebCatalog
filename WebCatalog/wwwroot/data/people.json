@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Misha",
+    "role": "Brother",
+    "birthDate": "2000-11-23",
+    "image": "images/misha.jpg",
+    "onFrontPage": true
+
+  },
+
+  {
+    "id": 2,
+    "name": "Sophia",
+    "role": "Sister",
+    "birthDate": "2010-05-21",
+    "image": "images/sophia.jpg",
+    "onFrontPage": true
+  },
+  {
+    "id": 3,
+    "name": "Milka",
+    "role": "Cat",
+    "birthDate": "2020-07-28",
+    "image": "images/milka.jpg",
+    "onFrontPage": true
+  },
+
+  {
+    
+    "id": 4,
+    "name": "Rndome Chel",
+    "role": "Test person",
+    "birthDate": "2021-01-07",
+    "image": null,
+    "onFrontPage": false
+  }
+]

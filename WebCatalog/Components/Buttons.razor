@@ -1,0 +1,35 @@
+﻿<h3>Buttons</h3>
+
+@using Microsoft.AspNetCore.Components.Web;
+@using WebCatalog.Models
+@using WebCatalog.Services
+@inject JsonFilePeopleService PeopleServise
+
+
+<div class="col">
+    <form class="buttons">
+        <div>
+            <button type="button" class="btn btn-primary btn-person" @onclick="x => NewPerson()">
+                New Person
+            </button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-person" @onclick="x => ExtendInfo()">
+                Extend existing info
+            </button>
+        </div>
+    </form>
+</div>
+
+@code {
+
+    void NewPerson()
+    {
+
+    }
+ 
+    void ExtendInfo()
+    {
+
+    }
+}

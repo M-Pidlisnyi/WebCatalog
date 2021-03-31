@@ -1,0 +1,28 @@
+﻿@page
+@using WebCatalog.Components
+@model WebCatalog.Pages.PersonnelModel
+@{
+    ViewData["Title"] = "Personnel page";
+}
+<div class="content">
+    <div class="row">
+        <div class="col">
+            <h3>Available Personnel</h3>
+            <ul>
+                @foreach (var person in Model.People)
+                {
+                    <li>
+                        <h5>Personnel No.@person.ID: @person.Name</h5>
+                        <p>
+                            @person.Name was born in @person.BirthDate
+                            @person.Name's role is @person.Role
+                        </p>
+                    </li>
+                }
+            </ul>
+        </div>
+        @(await Html.RenderComponentAsync<Buttons>(RenderMode.ServerPrerendered))
+    </div>
+</div>
+
+
